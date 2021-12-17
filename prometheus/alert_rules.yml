@@ -1,0 +1,28 @@
+groups:
+     # Chose your 'name' 
+ - name: Nodes
+   rules:
+   - alert: Near
+     # This alert will triger if you node is dowm
+     expr: up{instance="79.143.178.128:3030"}                          
+     for: 1m
+     # Annotation - additional informational labels to store more information
+     annotations:
+       title: 'Instance {{ $labels.instance }} down'
+       description: '{{ $labels.instance }} of job {{ $labels.job }} has been down for more than 1 minute.'
+     # Labels - additional labels to be attached to the alert
+     labels:
+       severity: 'critical'
+
+     # Chose your 'name' 
+   - alert: Near
+     # This alert will triger if you node is dowm
+     expr: near_block_total{instance="79.143.178.128:3030"} > 0                          
+     for: 1m
+     # Annotation - additional informational labels to store more information
+     annotations:
+       title: 'Instance {{ $labels.instance }} blockheight'
+     # Labels - additional labels to be attached to the alert
+     labels:
+       severity: 'critical'  
+   
