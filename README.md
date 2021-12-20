@@ -1,5 +1,6 @@
 # Near Node monitring
-Node monitoring and alerts tools packed in docker-compose
+Node monitoring and alerts tools packed in docker-compose.
+
 Main goal of this tooling is to create easy to use monitoring for Near node and netwrok, out of the box.
 
 
