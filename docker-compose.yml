@@ -11,13 +11,13 @@ services:
   alertmanager-bot: 
     container_name: alertmanager-bot
     command:
-    - --alertmanager.url=http://79.143.178.128:9093    
+    - --alertmanager.url=http://<AAA.AAA.AAA.AAA>:9093    
     - --log.level=info
     - --store=bolt
     - --bolt.path=/data/bot.db
     environment:
-      TELEGRAM_ADMIN: "1933874030" 
-      TELEGRAM_TOKEN: 2132175026:AAHvN6jPaRgXhvj1lAiT7RgirPkfpOz3a2o  
+      TELEGRAM_ADMIN: "<telegram_id_number>" 
+      TELEGRAM_TOKEN: <telegram_bot_token>  
     image: metalmatze/alertmanager-bot:0.4.3
     networks:
     - alertmanager-bot
