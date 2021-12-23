@@ -43,9 +43,7 @@ git clone https://github.com/doma2k/Near-network-monitoring-tool.git
 
 4) Update files:
 
-- `alert_rules.yml` , `prometheus.yml` located in `prometheus` directory;
-
-- `config.yml` located in `alertmanager` directory.
+`alert_rules.yml` & `prometheus.yml` located in `prometheus` directory.
 
 Input your near node ip number instead of `<AAA.AAA.AAA.AAA>`
 
