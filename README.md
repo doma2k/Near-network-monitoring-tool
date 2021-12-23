@@ -58,5 +58,5 @@ docker-compose up
 
 To stop docker-compose - use 
 ```
-docker-compose up
+docker-compose down
 ```
