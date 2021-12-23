@@ -42,16 +42,23 @@ git clone https://github.com/doma2k/Near-network-monitoring-tool.git
 ```
 
 4) Update files:
+
 - `alert_rules.yml` , `prometheus.yml` located in `prometheus` directory;
+
 - `config.yml` located in `alertmanager` directory.
+
 Input your near node ip number instead of `<AAA.AAA.AAA.AAA>`
 
 5) Update `docker-compose.yml` file with the IP address of your near node, **Telegram id** and **bot token**:
+
 Input your near node ip number instead of `<AAA.AAA.AAA.AAA>`
+
 Input your **Telegram id** obtained in step 1 instead of `<telegram_id_number>`
+
 Input your **bot token** obtained in step 1 instead of `<telegram_bot_token>`
 
 6) Run monitoring tool with the following command:
+
 ```
 docker-compose up
 ```
