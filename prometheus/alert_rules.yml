@@ -4,7 +4,7 @@ groups:
    rules:
    - alert: Near
      # This alert will triger if you node is dowm
-     expr: up{instance="79.143.178.128:3030"} == 0                          
+     expr: up{instance="<AAA.AAA.AAA.AAA>:3030"} == 0                          
      for: 1m
      # Annotation - additional informational labels to store more information
      annotations:
@@ -17,7 +17,7 @@ groups:
      # Chose your 'name' 
    - alert: Near
      # This alert will triger if you node is dowm
-     expr: near_block_total{instance="79.143.178.128:3030"} > 0                          
+     expr: near_block_total{instance="<AAA.AAA.AAA.AAA>:3030"} > 0                          
      for: 1m
      # Annotation - additional informational labels to store more information
      annotations:
